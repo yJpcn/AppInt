@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <title> Atividade 02: Página HTML(+ Tags) </title>
+    <style>
+        body {
+            background-color: #383a57
+        }
+
+        a:link {
+            color: cornflowerblue;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rebeccapurple;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <b>
+        <h1 style="font-size:40px;color:white">HTML<sup> Linguagem de Marcação de Hipertexto</sup></h1>
+        <h2 style="font-size:35px;color:white">Tutoriais para iniciantes</h2>
+    </b>
+    <div>
+        <p style="font-size:30px;color:white"><img
+                src="https://neilpatel.com/wp-content/uploads/2017/12/codigos-html-para-paginas-web.jpeg"
+                alt="Imagem de código em HTML" width="250" length="250" align="left"><b><ins>HTML</ins></b>
+            <i>(Linguagem de
+                Marcação de HiperTexto)</i> é o bloco de construção mais básico da web. <mark>Define o significado e a
+                estrutura do conteúdo da web.</mark> Outras tecnologias além do HTML geralmente são usadas para
+            descrever a
+            aparência/apresentação (CSS) ou a funcionalidade/comportamento <i>(JavaScript)</i> de uma página da web.
+        </p>
+    </div>
+    <hr>
+    <div>
+        <header style="font-size:35px;color:white;text-align:center;"><b>HTML</b>,suas <i>Tags</i> e seus usos:</header>
+        <center>
+            <table style="color:white;font-size:25px;">
+                <thead>
+                    <tr>
+                        <th style="background-color:rgb(3, 118, 195)">TAGS</th>
+                        <th style="background-color:rgb(3, 118, 195)">UTILIDADES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="background-color:rgb(4, 97, 159)">&lt;html&gt;</td>
+                        <td style="background-color: rgb(4, 4, 122)">A tag &lt;html&gt;representa a raiz de
+                            um arquivo HTML.
+
+                            A tag &lt;HTML&gt; contém todas as outras tags da linguagem(exceto a tag &lt;DOCTYPE&gt;).
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td style="background-color:rgb(4, 97, 159)">&lt;title&gt;</td>
+                        <td style="background-color: rgb(4, 4, 122)">
+                            A tag &lt;title&gt; define o título do documento. O título deve conter somente texto e é
+                            mostrado na barra de título do navegador ou na aba da página; além de ser obrigatório
+                            num arquivo HTML, também é importantíssimo para os sistemas de busca dos navegadores.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:rgb(4, 97, 159)">&lt;head&gt;</td>
+                        <td style="background-color: rgb(4, 4, 122)">A tag &lt;head&gt; contém somente metadados e é
+                            colocada entre a tag &lt;html&gt; e a tag &lt;body&gt;.; Metadados são dados sobre o
+                            documento HTML;os metadados não são exibidos.
+
+                            Os metadados geralmente definem o título do documento, conjunto de caracteres, estilos,
+                            scripts, e outros.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:rgb(4, 97, 159)">&lt;body&gt;</td>
+                        <td style="background-color: rgb(4, 4, 122)">A tag &lt;body&gt; define o corpo do documento;
+                            geralmente o local com o maior número de linhas do arquivo, pelo fato de compreender todo o
+                            conteúdo de um arquvo HTML, como cabeçalhos, parágrafos, imagens,hiperlinks,etc. Só pode
+                            haver uma tag &lt;body&gt; num arquivo HTML.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:rgb(4, 97, 159)">&lt;h1&gt;- &lt;h6&gt;</td>
+                        <td style="background-color: rgb(4, 4, 122)">As tags &lt;h1&gt;- &lt;h6&gt; definem cabeçalhos
+                            num arquivo HTML, numa ordem decrescente de importância; &lt;h1&gt; sendo o mais importante,
+                            e &lt;h6&gt; o menos importante.</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td style="background-color:rgb(4, 97, 159)">&lt;p&gt;</td>
+                        <td style="background-color: rgb(4, 4, 122)">A tag &lt;p&gt; define um parágrafo.
+
+                            Os navegadores adicionam automaticamente uma única linha em branco antes e depois de cada
+                            elemento &lt;p&gt;.</td>
+                    </tr>
+                    <td style="background-color:rgb(4, 97, 159)">&lt;a&gt;</td>
+                    <td style="background-color: rgb(4, 4, 122)">
+                        A tag &lt;a&gt; define um hyperlink, que é usado para ligar de uma página para outra.
+
+                        O atributo mais importante do elemento &lt;a&gt; é o atributo href, que indica o destino do
+                        link.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:rgb(4, 97, 159)">&lt;div&gt;</td>
+                        <td style="background-color: rgb(4, 4, 122)">A tag &lt;div&gt; define um divisor num arquivo
+                            HTML; é usada para modificar o conteúdo dentro desse divisor com estilizações com CSS ou
+                            manipulações usando JavaScript. Qualquer conteúdo pode ser colocado dentro de uma tag
+                            &lt;div&gt;.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:rgb(4, 97, 159)">&lt;img&gt;</td>
+                        <td style="background-color: rgb(4, 4, 122)">A tag &lt;img&gt; é usada para incorporar uma
+                            imagem na página, por meio de uma URL ligada a essa imagem. São obrigatórios os atributos
+                            src, que contém o link até a imagem,e o atributo alt, que determina o texto a aparecer caso
+                            a imagem não carregue.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:rgb(4, 97, 159)">&lt;style&gt;</td>
+                        <td style="background-color: rgb(4, 4, 122)">A tag &lt;style&gt; é utilizada para como certos
+                            elementos aparecem no documento, como a cor de um cabeçalho ou a posição de uma tabela.
+                            Geralmente deve ser colocada na tag &lt;head&gt; do arquivo, por motivos de organização.
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+    </div>
+    </center>
+
+</body>
+
+
+</html>
