@@ -1,25 +1,46 @@
 <html>
+<!--Mudanças da atividade 2 pra essa são a divisão dos setores com as tags <header> e <section>, além do acréscimo da lista ordenada no final.-->
 
 <head>
+    <title> Atividade 02: Página HTML(+ Tags) </title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <style>
         body {
-            background-color: #383a57;
+            background-color: #383a57
         }
 
-        input,
-        label {
-            text-align: left;
+        table,
+        th,
+        td {
+            border: 1px solid white;
+        }
+
+        ol {
             font-size: 25px;
+            color: white;
+            border: 1px solid white;
         }
 
-        input,
-        textarea,
-        button,
-        select {
-            background-color: black;
-            color: rgb(255, 255, 255);
-            border: 1px solid rgb(255, 255, 255);
+
+        #l1,
+        p {
+            font-size: 25px;
+            color: white;
+            border: 1px solid white;
+            background-color: rgb(4, 4, 122);
+        }
+
+        h1 {
+            font-size: 35px;
+            color: white
+        }
+
+        #td1 {
+            background-color: rgb(4, 97, 159)
+        }
+
+        #td2 {
+            background-color: rgb(4, 4, 122)
         }
 
         a {
@@ -28,19 +49,23 @@
             text-decoration: none;
         }
 
-        li {
-            font-size: 25px;
+        h2,
+        ul {
+            color: white;
         }
 
-        h2 {
-            font-size: 30px;
+        li {
+            font-size: 20px;
         }
     </style>
-    <title>Contato</title>
 </head>
 
-<body style="color: rgb(255, 255, 255);">
+<body>
     <header>
+        <b>
+            <h1>HTML<sup> Linguagem de Marcação de Hipertexto</sup></h1>
+            <h2 style="font-size:30px;color:white">Tutoriais para iniciantes</h2>
+        </b>
         <nav style="background-color:rgb(12, 0, 82);border: 1px solid white;">
             <ul style="display: flex;align-items: normal;justify-content: space-evenly;font-size: 20px; color: white;">
                 <li><a href="Inicial.html">Início</a></li>
@@ -51,29 +76,153 @@
             </ul>
         </nav>
     </header>
-    <form method="get" action="obrigado.html" style="font-size: 30;">
-        <center>
-            <h2>Bom dia! Siga as seguintes instruções para o envio de sua mensagem.</h2>
-            <fieldset style="border: 1px solid  rgb(248, 237, 179)">
-                <label>Insira seu nome:</label>
-                <input type="text" id="name" name="nome" placeholder="Seu nome aqui" required> <br>
-                <label>Insira seu email:</label>
-                <input type="text" id="email" name="email" placeholder="seuemail@gmail.com" required> <br>
-                <label>Informe o assunto de sua mensagem:</label>
-                <select id="assunto" name="assunto" placeholder="Assunto da Mensagem" required>
-                    <option value="1"> Contato para Parceria</option>
-                    <option value="2"> Envio de Currículo</option>
-                    <option value="3"> Reclamação</option>
-                </select> <br>
-                <label>Escreva sua mensagem:</label> <br>
-                <textarea rows="20" cols="100" id="mensagem" name="mensagem"
-                    style="font-size: 25; background-color: black;" required> </textarea> <br>
-                <input type="checkbox" style="font-size:35px;height: 25px;width: 25px;" required>
-                <label> Concordo com os termos de privacidade</label><br>
-                <button type="submit" style="font-size: 35px;">Envio</button>
-            </fieldset>
-        </center>
-    </form>
+    <section id=HTML style="background-color: rgb(4, 4, 122);">
+        <p style="line-height:45px;">
+            <img src="https://neilpatel.com/wp-content/uploads/2017/12/codigos-html-para-paginas-web.jpeg"
+                alt="Imagem de código em HTML" width="200" length="200" align="left">
+            <b><ins>HTML</ins></b>
+            <i>(Linguagem de
+                Marcação de HiperTexto)</i> é o bloco de construção mais básico da web. <mark>Define o significado e
+                a
+                estrutura do conteúdo da web.</mark> Outras tecnologias além do HTML geralmente são usadas para
+            descrever a
+            aparência/apresentação (CSS) ou a funcionalidade/comportamento <i>(JavaScript)</i> de uma página da web.
+            </ps>
+    </section>
+    <hr style="margin-top:20;">
+    <div
+        style="display:flex;align-items: center; line-height: 30px; margin: 0px 10px 10px 10px;text-align: center;justify-content: space-evenly;">
+        <section id=tabela style="width: 68%;">
+            <table style="color:white;font-size:20px;">
+                <h1><b>HTML</b>,suas <i>Tags</i> e seus usos:</h1>
+                <thead>
+                    <tr>
+                        <th style="background-color:rgb(3, 118, 195)">TAGS</th>
+                        <th style="background-color:rgb(3, 118, 195)">UTILIDADES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id=td1>&lt;html&gt;</td>
+                        <td id=td2>A tag &lt;html&gt;representa a raiz de
+                            um arquivo HTML.
+
+                            A tag &lt;HTML&gt; contém todas as outras tags da linguagem(exceto a tag &lt;DOCTYPE&gt;).
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td id=td1>&lt;title&gt;</td>
+                        <td id=td2>
+                            A tag &lt;title&gt; define o título do documento. O título deve conter somente texto e é
+                            mostrado na barra de título do navegador ou na aba da página; além de ser obrigatório
+                            num arquivo HTML, também é importantíssimo para os sistemas de busca dos navegadores.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id=td1>&lt;head&gt;</td>
+                        <td id=td2>A tag &lt;head&gt; contém somente metadados e é
+                            colocada entre a tag &lt;html&gt; e a tag &lt;body&gt;.; Metadados são dados sobre o
+                            documento HTML;os metadados não são exibidos.
+
+                            Os metadados geralmente definem o título do documento, conjunto de caracteres, estilos,
+                            scripts, e outros.</td>
+                    </tr>
+                    <tr>
+                        <td id=td1>&lt;body&gt;</td>
+                        <td id=td2>A tag &lt;body&gt; define o corpo do documento;
+                            geralmente o local com o maior número de linhas do arquivo, pelo fato de compreender todo o
+                            conteúdo de um arquvo HTML, como cabeçalhos, parágrafos, imagens,hiperlinks,etc. Só pode
+                            haver uma tag &lt;body&gt; num arquivo HTML.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id=td1>&lt;h1&gt;- &lt;h6&gt;</td>
+                        <td id=td2>As tags &lt;h1&gt;- &lt;h6&gt; definem cabeçalhos
+                            num arquivo HTML, numa ordem decrescente de importância; &lt;h1&gt; sendo o mais importante,
+                            e &lt;h6&gt; o menos importante.</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td id=td1>&lt;p&gt;</td>
+                        <td id=td2>A tag &lt;p&gt; define um parágrafo.
+
+                            Os navegadores adicionam automaticamente uma única linha em branco antes e depois de cada
+                            elemento &lt;p&gt;.</td>
+                    </tr>
+                    <td id=td1>&lt;a&gt;</td>
+                    <td id=td2>
+                        A tag &lt;a&gt; define um hyperlink, que é usado para ligar de uma página para outra.
+
+                        O atributo mais importante do elemento &lt;a&gt; é o atributo href, que indica o destino do
+                        link.</td>
+                    </tr>
+                    <tr>
+                        <td id=td1>&lt;div&gt;</td>
+                        <td id=td2>A tag &lt;div&gt; define um divisor num arquivo
+                            HTML; é usada para modificar o conteúdo dentro desse divisor com estilizações com CSS ou
+                            manipulações usando JavaScript. Qualquer conteúdo pode ser colocado dentro de uma tag
+                            &lt;div&gt;.</td>
+                    </tr>
+                    <tr>
+                        <td id=td1>&lt;img&gt;</td>
+                        <td id=td2>A tag &lt;img&gt; é usada para incorporar uma
+                            imagem na página, por meio de uma URL ligada a essa imagem. São obrigatórios os atributos
+                            src, que contém o link até a imagem,e o atributo alt, que determina o texto a aparecer caso
+                            a imagem não carregue.</td>
+                    </tr>
+                    <tr>
+                        <td id=td1>&lt;style&gt;</td>
+                        <td id=td2>A tag &lt;style&gt; é utilizada para como certos
+                            elementos aparecem no documento, como a cor de um cabeçalho ou a posição de uma tabela.
+                            Geralmente deve ser colocada na tag &lt;head&gt; do arquivo, por motivos de organização.
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <hr style="align-self: stretch;">
+        <section>
+            <h1>Os Protocolos Web Mais Utilizados</h1>
+            <ol type="1" style="background-color:rgb(4, 97, 159); margin-bottom: 10;">
+                <li id=L1>HTTP - Hypertext Transfer Protocol </li>
+                <li id=L1>FTP - File Transfer Protocol</li>
+                <li id=L1>SMTP - Simple Mail Transfer Protocol</li>
+                <li id=L1>DNS - Domain Name System</li>
+                <li id=L1>IMAP - Internet Message Access Protocol</li>
+            </ol>
+        </section>
+    </div>
+    <hr>
+    <div id=textos style="display: flex;text-align: center;line-height: 30px;align-items: stretch;margin: 0 0 0 0;">
+        <section style="width: 33%;padding: 20px;">
+            <h1>O que é CSS?</h1>
+            <p style="font-size: 20px;"> Cascading Style Sheets (CSS) é usado para formatar o layout de uma página da
+                web. Com CSS, você pode
+                controlar a cor, a fonte, o tamanho do texto, o espaçamento entre os elementos, como os elementos são
+                posicionados e dispostos, quais imagens de fundo ou cores de fundo devem ser usadas, exibições
+                diferentes para dispositivos e tamanhos de tela diferentes e muito
+                mais!</p>
+        </section>
+        <hr>
+        <section style="width: 33%;padding: 20px;">
+            <h1>O que é HTML?</h1>
+            <p style="font-size: 20px;">HTML é uma linguagem de marcação utilizada na construção de páginas na Web.
+                Documentos HTML podem ser
+                interpretados por navegadores. A
+                tecnologia é fruto da junção entre os padrões HyTime e SGML. HyTime é um padrão para a representação
+                estruturada de hipermídia e conteúdo baseado em tempo.</p>
+        </section>
+        <hr>
+        <section style="width: 33%;padding: 20px;">
+            <h1>O que é JavaScript?</h1>
+            <p style="font-size: 20px;;">JavaScript é uma linguagem de programação interpretada estruturada, de script
+                em alto nível com tipagem
+                dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais
+                tecnologias da World Wide Web.</p>
+        </section>
+    </div>
     <hr>
     <footer id=="rodape"
         style="display: flex;justify-content: space-evenly;background-color:rgb(12, 0, 82);border: 1px solid white; text-align: center;">
@@ -100,7 +249,6 @@
                 <li><a href="https://github.com/yJpcn/AppInt" target="_blank">Repositório Git</a></li>
             </ul>
         </section>
-        <h1 style="text-align: center;">Direitos Autorais &copy; João Pedro Coutinho</h1>
     </footer>
     <h1 style="text-align: center;">Direitos Autorais &copy; João Pedro Coutinho</h1>
 </body>
