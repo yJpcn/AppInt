@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        body {
+            background-color: #383a57;
+        }
+
+        input,
+        label {
+            text-align: left;
+            font-size: 25px;
+        }
+
+        input,
+        textarea,
+        button,
+        select {
+            background-color: black;
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        a {
+            color: rgb(255, 255, 255);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        li {
+            font-size: 25px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+    </style>
+    <title>Contato</title>
+</head>
+
+<body style="color: rgb(255, 255, 255);">
+    <header>
+        <nav style="background-color:rgb(12, 0, 82);border: 1px solid white;">
+            <ul style="display: flex;align-items: normal;justify-content: space-evenly;font-size: 20px; color: white;">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#HTML">HTML</a></li>
+                <li><a href="index.html#tabela">Tabela/Lista</a></li>
+                <li><a href="index.html#textos">Sobre CSS,HTML e JS</a></li>
+                <li><a href="index.html#rodape">Rodapé</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form method="get" action="obrigado.html" style="font-size: 30;">
+        <center>
+            <h2>Bom dia! Siga as seguintes instruções para o envio de sua mensagem.</h2>
+            <fieldset style="border: 1px solid  rgb(248, 237, 179)">
+                <label>Insira seu nome:</label>
+                <input type="text" id="name" name="nome" placeholder="Seu nome aqui" required> <br>
+                <label>Insira seu email:</label>
+                <input type="text" id="email" name="email" placeholder="seuemail@gmail.com" required> <br>
+                <label>Informe o assunto de sua mensagem:</label>
+                <select id="assunto" name="assunto" placeholder="Assunto da Mensagem" required>
+                    <option value="1"> Contato para Parceria</option>
+                    <option value="2"> Envio de Currículo</option>
+                    <option value="3"> Reclamação</option>
+                </select> <br>
+                <label>Escreva sua mensagem:</label> <br>
+                <textarea rows="20" cols="100" id="mensagem" name="mensagem"
+                    style="font-size: 25; background-color: black;" required> </textarea> <br>
+                <input type="checkbox" style="font-size:35px;height: 25px;width: 25px;" required>
+                <label> Concordo com os termos de privacidade</label><br>
+                <button type="submit" style="font-size: 35px;">Envio</button>
+            </fieldset>
+        </center>
+    </form>
+    <hr>
+    <footer id=="rodape"
+        style="display: flex;justify-content: space-evenly;background-color:rgb(12, 0, 82);border: 1px solid white; text-align: center;">
+        <section>
+            <h2>Sobre</h2>
+            <ul>
+                <li><a href="index.html">Início da Página</a></li>
+                <li>Política de Privacidade</li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Referências</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/css/" target="_blank">W3schools</a></li>
+                <li><a href="https://www.youtube.com/c/danielbrandao" target="_blank">Canal Daniel Brandão</a></li>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">Mozilla Developer
+                        Network</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Links</h2>
+            <ul>
+                <li><a href="https://github.com/yJpcn/AppInt" target="_blank">Repositório Git</a></li>
+            </ul>
+        </section>
+    </footer>
+    <h1 style="text-align: center;">Direitos Autorais &copy; João Pedro Coutinho</h1>
+</body>
+
+</html>
